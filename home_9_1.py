@@ -1,4 +1,4 @@
-def popular_words (text, words):
+def popular_words (text, words) -> dict:
     text_split = text.lower().split()
     return { word: text_split.count(word) for word in words }
 
